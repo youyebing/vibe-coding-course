@@ -11,9 +11,13 @@
 │   │   └── references/
 │   │       ├── glossary.md        #     159 词术语字典（定义/句式/代码/避坑）
 │   │       └── prompt-templates.md #    5 类页面需求模板 + 验收句
-│   └── bilibili-video-extract/    #   B 站视频提取工具链（扫码登录/字幕/OCR 交叉校对）
-│       ├── SKILL.md
-│       └── scripts/               #     wbi 签名 / 二维码登录 / 字幕拉取 / Vision OCR 等
+│   ├── bilibili-video-extract/    #   B 站视频提取工具链（扫码登录/字幕/OCR 交叉校对）
+│   │   ├── SKILL.md
+│   │   └── scripts/               #     wbi 签名 / 二维码登录 / 字幕拉取 / Vision OCR 等
+│   ├── socratic-inquiry/          #   通用苏格拉底问诊：重建问题本身（一次一问 ≤6 问，六要素收敛）
+│   │   └── SKILL.md
+│   └── socratic-requirement-clarification/  #   工程需求澄清：锁定交付物（决定编号记账、全量复述确认）
+│       └── SKILL.md
 └── 课程笔记/
     ├── 分集笔记/                  # 17 集 × md，每概念配视频截图（标题卡 + 讲解屏）
     │   ├── README.md              #   目录索引
@@ -23,7 +27,7 @@
 
 ## 🚀 安装与使用
 
-**Skills**（Hermes 用户）：把 `skills/` 下两个目录复制到 `~/.hermes/skills/<分类>/`（如 `creative/frontend-ai-design`、`media/bilibili-video-extract`），之后对 AI 说"帮我做个页面"或发 B 站链接即可自动调用。
+**Skills**（Hermes 用户）：把 `skills/` 下四个目录复制到 `~/.hermes/skills/<分类>/`（如 `creative/frontend-ai-design`、`media/bilibili-video-extract`、`software-development/socratic-inquiry`、`software-development/socratic-requirement-clarification`），之后对 AI 说"帮我做个页面"或发 B 站链接即可自动调用。`frontend-ai-design` 的需求澄清环节会联动两个 socratic skill：先问诊重建问题（`socratic-inquiry`），再澄清锁定交付物（`socratic-requirement-clarification`）。
 
 **课程笔记**：用 Obsidian / Typora 打开 `课程笔记/分集笔记/README.md`，图片随文档渲染（相对路径，整个文件夹搬家不断链）。
 
