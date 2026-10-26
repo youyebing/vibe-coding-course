@@ -11,6 +11,11 @@
 │   │   └── references/
 │   │       ├── glossary.md        #     159 词术语字典（定义/句式/代码/避坑）
 │   │       └── prompt-templates.md #    5 类页面需求模板 + 验收句
+│   ├── api-contract-vocabulary/    #   前后端对接契约：6 层模型 + 63 词对接词表 + 契约模板与验收清单
+│   │   ├── SKILL.md
+│   │   └── references/
+│   │       ├── contract-glossary.md   #     63 词六层词表（请求/响应/鉴权/跨域/界面态/联调治理）
+│   │       └── contract-templates.md  #     接口契约表 / 响应包装 / 错误码分段 / AI 提词 / 联调清单
 │   ├── bilibili-video-extract/    #   B 站视频提取工具链（扫码登录/字幕/OCR 交叉校对）
 │   │   ├── SKILL.md
 │   │   └── scripts/               #     wbi 签名 / 二维码登录 / 字幕拉取 / Vision OCR 等
@@ -27,7 +32,7 @@
 
 ## 🚀 安装与使用
 
-**Skills**（Hermes 用户）：把 `skills/` 下四个目录复制到 `~/.hermes/skills/<分类>/`（如 `creative/frontend-ai-design`、`media/bilibili-video-extract`、`software-development/socratic-inquiry`、`software-development/socratic-requirement-clarification`），之后对 AI 说"帮我做个页面"或发 B 站链接即可自动调用。`frontend-ai-design` 的需求澄清环节会联动两个 socratic skill：先问诊重建问题（`socratic-inquiry`），再澄清锁定交付物（`socratic-requirement-clarification`）。
+**Skills**（Hermes 用户）：把 `skills/` 下四个目录复制到 `~/.hermes/skills/<分类>/`（如 `creative/frontend-ai-design`、`software-development/api-contract-vocabulary`、`media/bilibili-video-extract`、`software-development/socratic-inquiry`、`software-development/socratic-requirement-clarification`），之后对 AI 说"帮我做个页面"或发 B 站链接即可自动调用。`frontend-ai-design` 的需求澄清环节会联动两个 socratic skill：先问诊重建问题（`socratic-inquiry`），再澄清锁定交付物（`socratic-requirement-clarification`）。`api-contract-vocabulary` 补的是 `frontend-ai-design` 第 1–10 层之外的第 11 层——**页面怎么接上自己的后端**：六层对接模型（请求/响应/鉴权/跨域与环境/界面态/联调治理）、63 词对接词表、接口契约表与联调验收清单。
 
 **课程笔记**：用 Obsidian / Typora 打开 `课程笔记/分集笔记/README.md`，图片随文档渲染（相对路径，整个文件夹搬家不断链）。
 
