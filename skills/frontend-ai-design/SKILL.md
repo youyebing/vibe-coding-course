@@ -17,6 +17,7 @@ version: 1.0.0
 - AI 回复里冒出不懂的前端术语 → 打开 `references/glossary.md` 查
 - 用户描述含糊（"做个好看的页面"）→ 用分层模型引导他把需求拆成词
 - 要具体视觉风格参考（Stripe / Linear 那种）→ 另加载 `popular-web-designs` 技能
+- 页面要**接自己的后端**（接口怎么调、失败怎么显、提交怎么防重）→ 叠加第 11 层技能 `api-contract-vocabulary`
 
 ## 核心方法：分层词汇模型
 
@@ -34,6 +35,8 @@ version: 1.0.0
 | 8 | **外观** | 长什么样？ | 颜色、字体、字号、圆角、阴影、间距 |
 | 9 | **交互** | 动起来是什么样？ | hover、过渡、动画、拖拽、无限滚动 |
 | 10 | **网络与验收** | 对外呈现与兜底 | 域名/CDN/重定向 + Title、Favicon、Undo、Accessibility |
+
+> **第 11 层不在本表**：本技能的 10 层管「页面长什么样」；页面怎么跟自己的后端说话（请求/响应/鉴权/跨域与环境/界面态/联调治理）见 `api-contract-vocabulary`。
 
 > 记忆锚：**值越复杂，控件越高级**（布尔→switch；连续值→slider；枚举→select；树→tree-select）。
 
@@ -73,9 +76,11 @@ version: 1.0.0
 **兜底**
 - [ ] 误操作可 **Undo**（删除/危险动作）
 - [ ] 移动端不破版（若需要响应式）
+- [ ] **要接后端**：四态（加载/空/错误/无权限）齐、提交防重复、跨域在生产域名下验证过 → 走 `api-contract-vocabulary` 的验收清单
 
 ## 查词与核对
 
 - 术语全表：`references/glossary.md`（159 词，按集分章，每词 = en｜zh｜定义｜要点｜给 AI 的句式｜代码｜避坑）
 - 需求模板：`references/prompt-templates.md`
+- 对接契约（不在本技能内）：`api-contract-vocabulary` —— 63 词六层词表 + 接口契约表 + 联调验收清单
 - 要回到原视频核对：`bilibili-video-extract` 技能；原始逐字稿与素材已归档在 `E:\vibe-coding-course\课程笔记\逐字稿\`（本机 E 盘仓库）
