@@ -83,4 +83,4 @@ version: 1.0.0
 - 术语全表：`references/glossary.md`（159 词，按集分章，每词 = en｜zh｜定义｜要点｜给 AI 的句式｜代码｜避坑）
 - 需求模板：`references/prompt-templates.md`
 - 对接契约（不在本技能内）：`api-contract-vocabulary` —— 63 词六层词表 + 接口契约表 + 联调验收清单
-- 要回到原视频核对：`bilibili-video-extract` 技能；原始逐字稿与素材已归档在 `E:\vibe-coding-course\课程笔记\逐字稿\`（本机 E 盘仓库）
+- 要回到原视频核对：`bilibili-video-extract` 技能；原始逐字稿归档在仓库 `课程笔记/逐字稿/`，本机副本在 `~/VibeCoding术语课/逐字稿/`
